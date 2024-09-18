@@ -19,18 +19,18 @@ class PointTest {
 
     @Test
     void testNewPoint() {
-        assertEquals(p0.getX(), 0);
-        assertEquals(p0.getY(), 0);
-        assertEquals(p1.getX(), 1);
-        assertEquals(p1.getY(), 0);
-        assertEquals(p2.getX(), 0);
-        assertEquals(p2.getY(), 1);
+        assertEquals(0, p0.getX());
+        assertEquals(0, p0.getY());
+        assertEquals(1, p1.getX());
+        assertEquals(0, p1.getY());
+        assertEquals(0, p2.getX());
+        assertEquals(1, p2.getY());
     }
 
     @Test
     void testToString() {
-        assertEquals(p0.toString(), "0,0");
-        assertEquals(p1.toString(), "1,0");
-        assertEquals(p2.toString(), "0,1");
+        assertEquals("0,0", p0.toString());
+        assertEquals("1,0", p1.toString());
+        assertEquals("0,1", p2.toString());
     }
 }
