@@ -6,12 +6,14 @@ public class Rectangle {
     private Point c;
     private Point d;
 
+    public String color;
     public boolean halved;
     public boolean quartered;
 
-    public Rectangle(Point a, Point c) {
+    public Rectangle(Point a, Point c, String color) {
         this.setCorners(a, c);
 
+        this.color = color;
         this.halved = false;
         this.quartered = false;
     }

@@ -14,8 +14,8 @@ class RectangleTest {
 
     @BeforeAll
     void createRectangles() {
-        r1 = new Rectangle(new Point(5,5), new Point(12, 8));
-        r2 = new Rectangle(new Point(3,3), new Point());
+        r1 = new Rectangle(new Point(5,5), new Point(12, 8), "red");
+        r2 = new Rectangle(new Point(3,3), new Point(), "blue");
     }
 
     @Test
