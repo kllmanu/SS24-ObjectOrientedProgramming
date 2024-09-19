@@ -45,4 +45,21 @@ public class Rectangle {
     public void move(Point p) {
         this.setCorners(p);
     }
+
+    public int getPerimeter() {
+        return 2 * this.getWidth() + 2 * this.getHeight();
+    }
+
+    public void zoom(int factor) {
+        if (factor == 0) {
+            return;
+        }
+
+        int scaleX = this.getWidth() * factor;
+        int scaleY = this.getHeight() * factor;
+
+        this.setCorners(this.a,
+                new Point(this.a.getX() + scaleX, this.a.getY() + scaleY)
+        );
+    }
 }

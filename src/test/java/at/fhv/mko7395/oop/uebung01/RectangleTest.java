@@ -41,4 +41,22 @@ class RectangleTest {
         assertEquals("[2,2, 9,2, 9,5, 2,5]", Arrays.toString(r1.getCorners()));
         assertEquals("[-1,-1, 2,-1, 2,2, -1,2]", Arrays.toString(r2.getCorners()));
     }
+
+    @Test
+    @Order(4)
+    void getPerimeter() {
+        assertEquals(20, r1.getPerimeter());
+        assertEquals(12, r2.getPerimeter());
+    }
+
+    @Test
+    @Order(5)
+    void zoom() {
+        r2.zoom(2);
+
+        assertEquals(6, r2.getWidth());
+        assertEquals(6, r2.getHeight());
+        assertEquals(5, r2.getCorners()[2].getX());
+        assertEquals(5, r2.getCorners()[2].getY());
+    }
 }
