@@ -70,4 +70,43 @@ public class Rectangle {
                 new Point(this.a.getX() + scaleX, this.a.getY() + scaleY)
         );
     }
+
+    public String toString() {
+        StringBuilder str = new StringBuilder();
+
+        str.append(String.format("<rect x='%d' y='%d' width='%d' height='%d' fill='%s' />",
+                this.a.getX(),
+                this.a.getY(),
+                this.getWidth(),
+                this.getHeight(),
+                this.color
+        ));
+
+        if (this.halved) {
+            str.append(String.format("<line x1='%d' y1='%d' x2='%d' y2='%d' stroke='black' />",
+                    this.a.getX(),
+                    this.a.getY(),
+                    this.c.getX(),
+                    this.c.getY()
+            ));
+        }
+
+        if (this.quartered) {
+            str.append(String.format("<line x1='%d' y1='%d' x2='%d' y2='%d' stroke='black' />",
+                    this.a.getX() + this.getWidth() / 2,
+                    this.a.getY(),
+                    this.c.getX() - this.getWidth() / 2,
+                    this.c.getY()
+            ));
+
+            str.append(String.format("<line x1='%d' y1='%d' x2='%d' y2='%d' stroke='black' />",
+                    this.a.getX(),
+                    this.a.getY() + this.getHeight() / 2,
+                    this.c.getX(),
+                    this.c.getY() - this.getHeight() / 2
+            ));
+        }
+
+        return str.toString();
+    }
 }
