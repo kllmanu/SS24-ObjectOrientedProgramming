@@ -6,13 +6,13 @@ public class Rectangle {
     private Point c;
     private Point d;
 
-    public boolean halfed;
+    public boolean halved;
     public boolean quartered;
 
     public Rectangle(Point a, Point c) {
         this.setCorners(a, c);
 
-        this.halfed = false;
+        this.halved = false;
         this.quartered = false;
     }
 
