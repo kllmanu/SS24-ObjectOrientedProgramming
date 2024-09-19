@@ -58,5 +58,6 @@ class RectangleTest {
         assertEquals(6, r2.getHeight());
         assertEquals(5, r2.getCorners()[2].getX());
         assertEquals(5, r2.getCorners()[2].getY());
+        assertEquals(24, r2.getPerimeter());
     }
 }
