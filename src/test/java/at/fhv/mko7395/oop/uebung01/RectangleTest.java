@@ -14,24 +14,27 @@ class RectangleTest {
 
     @BeforeAll
     void createRectangles() {
-        r1 = new Rectangle(new Point(5,5), new Point(8, 8));
+        r1 = new Rectangle(new Point(5,5), new Point(12, 8));
         r2 = new Rectangle(new Point(3,3), new Point());
     }
 
     @Test
     @Order(1)
     void getCorners() {
-        assertEquals("[5,5, 8,5, 8,8, 5,8]", Arrays.toString(r1.getCorners()));
+        assertEquals("[5,5, 12,5, 12,8, 5,8]", Arrays.toString(r1.getCorners()));
         assertEquals( "[3,3, 0,3, 0,0, 3,0]", Arrays.toString(r2.getCorners()));
     }
 
     @Test
     @Order(2)
+
+    @Test
+    @Order(3)
     void setCorners() {
-        r1.move(new Point(10, 10));
+        r1.move(new Point(2, 2));
         r2.move(new Point(-1, -1));
 
-        assertEquals("[10,10, 8,10, 8,8, 10,8]", Arrays.toString(r1.getCorners()));
-        assertEquals("[-1,-1, 0,-1, 0,0, -1,0]", Arrays.toString(r2.getCorners()));
+        assertEquals("[2,2, 9,2, 9,5, 2,5]", Arrays.toString(r1.getCorners()));
+        assertEquals("[-1,-1, 2,-1, 2,2, -1,2]", Arrays.toString(r2.getCorners()));
     }
 }

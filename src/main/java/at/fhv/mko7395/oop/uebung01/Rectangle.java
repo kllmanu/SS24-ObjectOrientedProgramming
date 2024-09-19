@@ -15,11 +15,11 @@ public class Rectangle {
     }
 
     public int getWidth() {
-        return this.c.getX() - this.a.getX();
+        return Math.abs(this.c.getX() - this.a.getX());
     }
 
     public int getHeight() {
-        return this.c.getY() - this.a.getY();
+        return Math.abs(this.c.getY() - this.a.getY());
     }
 
     public void setCorners(Point a, Point c) {
@@ -30,10 +30,12 @@ public class Rectangle {
     }
 
     public void setCorners(Point a) {
-        this.a = a;
-        this.b = new Point(a.getX() + this.getWidth(), a.getY());
-        this.c = new Point(a.getX() + this.getWidth(),a.getY() + this.getHeight());
-        this.d = new Point(a.getX(), this.a.getY() + this.getHeight());
+        int x = a.getX() + this.getWidth();
+        int y = a.getY() + this.getHeight();
+
+        Point c = new Point(x, y);
+
+        this.setCorners(a, c);
     }
 
     public void move(Point p) {
