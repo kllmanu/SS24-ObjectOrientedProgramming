@@ -27,6 +27,10 @@ class RectangleTest {
 
     @Test
     @Order(2)
+    void isSquare() {
+        assertFalse(r1.isSquare());
+        assertTrue(r2.isSquare());
+    }
 
     @Test
     @Order(3)

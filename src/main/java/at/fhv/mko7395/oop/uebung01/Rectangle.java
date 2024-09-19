@@ -22,6 +22,10 @@ public class Rectangle {
         return Math.abs(this.c.getY() - this.a.getY());
     }
 
+    public boolean isSquare() {
+        return this.getWidth() == this.getHeight();
+    }
+
     public void setCorners(Point a, Point c) {
         this.a = a;
         this.b = new Point(c.getX(), a.getY());
