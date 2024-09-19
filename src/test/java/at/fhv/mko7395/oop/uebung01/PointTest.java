@@ -18,7 +18,7 @@ class PointTest {
     }
 
     @Test
-    void testNewPoint() {
+    void getNewPointCoordinates() {
         assertEquals(0, p0.getX());
         assertEquals(0, p0.getY());
         assertEquals(1, p1.getX());
