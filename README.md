@@ -8,7 +8,7 @@
 > Dadurch lassen sich Übungen unabhängig von der verwendeten Entwicklungsumgebung aufrufen, ganz abgesehen davon
 > finde ich es angenehmer und übersichtilcher ohne gleich mit „schwerer“ IDE in kleinen angedockten Fenstern zu arbeiten.
 >
-> zB `make uebung1-1` oder `uebung1-2`
+> zB `make uebung1-1` oder `make uebung1-2`
 
 ## Übung 1
 
