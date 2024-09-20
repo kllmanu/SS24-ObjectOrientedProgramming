@@ -28,7 +28,7 @@ public class Main {
                 "black"
         );
 
-        System.out.printf("<svg height='%d' width='%d'>%n", 501, 501);
+        System.out.printf("<svg height='%d' width='%d' xmlns='http://www.w3.org/2000/svg'>%n", 501, 501);
         System.out.println(Main.grid);
         System.out.println(r1);
         System.out.println(r2);
