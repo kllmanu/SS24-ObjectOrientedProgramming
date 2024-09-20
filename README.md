@@ -33,3 +33,22 @@ make uebung1-1 > output.svg
 ```
 
 ![](./docs/uebung1/output.svg)
+
+### 2. Qualitätskontrolle
+
+Prof. Mayar hat vom Schweizer Ministerium für Käse und sonstige Milchprodukte (MfKsM) einen wichtigen
+Auftrag erhalten. Er soll ein System zur Qualitätskontrolle von Emmentaler Käse entwickeln. Es geht darum,
+die Anzahl der Löcher und den Umfang des größten Loches zu ermitteln.
+
+```
++---------------+
+|    **         |
+|   *  *    *   |
+|   ***    * *  |
+|       **  *   |
+| *     **      |
++---------------+
+```
+
+Anzahl der Löcher: 4
+Umfang des größten Loches: 7
