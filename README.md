@@ -100,4 +100,5 @@ die Anzahl der Löcher und den Umfang des größten Loches zu ermitteln.
 ```
 
 Anzahl der Löcher: 4
+
 Umfang des größten Loches: 7
