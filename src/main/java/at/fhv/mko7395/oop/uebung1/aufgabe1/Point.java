@@ -1,4 +1,4 @@
-package at.fhv.mko7395.oop.uebung01;
+package at.fhv.mko7395.oop.uebung1.aufgabe1;
 
 public class Point {
     private int x;

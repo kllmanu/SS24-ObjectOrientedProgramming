@@ -1,8 +1,10 @@
-package at.fhv.mko7395.oop.uebung01;
+package at.fhv.mko7395.oop.uebung1.aufgabe1;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 
-import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class PointTest {

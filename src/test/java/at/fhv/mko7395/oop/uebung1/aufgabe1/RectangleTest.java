@@ -1,10 +1,10 @@
-package at.fhv.mko7395.oop.uebung01;
-
-import static org.junit.jupiter.api.Assertions.*;
+package at.fhv.mko7395.oop.uebung1.aufgabe1;
 
 import org.junit.jupiter.api.*;
 
 import java.util.Arrays;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
@@ -14,15 +14,15 @@ class RectangleTest {
 
     @BeforeAll
     void createRectangles() {
-        r1 = new Rectangle(new Point(5,5), new Point(12, 8), "red");
-        r2 = new Rectangle(new Point(3,3), new Point(), "blue");
+        r1 = new Rectangle(new Point(5, 5), new Point(12, 8), "red");
+        r2 = new Rectangle(new Point(3, 3), new Point(), "blue");
     }
 
     @Test
     @Order(1)
     void getCorners() {
         assertEquals("[5,5, 12,5, 12,8, 5,8]", Arrays.toString(r1.getCorners()));
-        assertEquals( "[3,3, 0,3, 0,0, 3,0]", Arrays.toString(r2.getCorners()));
+        assertEquals("[3,3, 0,3, 0,0, 3,0]", Arrays.toString(r2.getCorners()));
     }
 
     @Test
