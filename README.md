@@ -1,8 +1,5 @@
 # SS24-ObjectOrientedProgramming
 
-> A collection of exercises in "Elementary Algorithms and Object Oriented Programming" - 2nd semester bachelor @
-> Vorarlberg University of Applied Sciences (FHV)
-
 > [!TIP]
 > Die einzelnen Übungen können mithilfe von [GNU/Make](https://www.gnu.org/software/make/) aufgerufen werden.
 > Dadurch lassen sich Übungen unabhängig von der verwendeten Entwicklungsumgebung aufrufen, ganz abgesehen davon
@@ -36,21 +33,6 @@ Für die Klasse `Rectangle` sind die folgenden Operationen zu realisieren:
   bzw. verkleinert.
 - Teilen eines Rechtecks in vier gleich große Rechtecke
 - Teilen eines Rechtecks entlang einer der Diagonalen in zwei Dreiecke
-
-#### Rechtecke als SVG
-
-Anstatt einer fiktiven und trostlosen Zustandsbeschreibung von Objekten, habe ich mich für einen einfachen, grafischen
-Ansatz entschieden, der die Rechtecke als skalierbare Vektorgrafiken (SVGs) zeichnet. Die `toString` Methode macht
-nämlich genau das, ein Objekt als String repräsentieren, oder — in meinem Fall — [als
-`<rect>` Element](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect) das lediglich als Text auf den `stdout`
-ausgegeben wird. Das ganze leite ich dann einfach in meiner `$SHELL` in eine Datei hinein.
-
-```
-make uebung1-1 > output.svg
-```
-
-Dabei habe ich es mir natürlich nicht nehmen lassen, [das Logo der FHV](https://www.fhv.at/fh/presse/logo-bildmaterial)
-mit drei geschickt platzierten Rechtecken auf einem Grid zu veranschaulichen. 🙌
 
 ```
     public static void main(String[] args) {
