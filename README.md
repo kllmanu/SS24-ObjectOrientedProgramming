@@ -1,20 +1,5 @@
 # SS24-ObjectOrientedProgramming
 
-> [!TIP]
-> Die einzelnen Übungen können mithilfe von [GNU/Make](https://www.gnu.org/software/make/) aufgerufen werden.
-> Dadurch lassen sich Übungen unabhängig von der verwendeten Entwicklungsumgebung aufrufen, ganz abgesehen davon
-> finde ich es angenehmer und übersichtilcher ohne gleich mit „schwerer“ IDE in kleinen angedockten Fenstern zu
-> arbeiten.
->
-> zB `make uebung1-1` oder `make uebung1-2`
-
-> [!IMPORTANT]
-> Ich habe bei weitem nicht alle Übungen gemacht und bin auch hie und da von der Aufgabe abgewichen. Vor allem dann,
-> wenn ich
-> meine, eine kreativere Lösung gefunden zu haben. Etwa, wenn es darum geht, ein ansprechendes User Interface umzusetzen
-> oder
-> etwas mehr auf Interaktion zu setzen.
-
 ## Übung 1
 
 ### 1. Geometrische Figuren
